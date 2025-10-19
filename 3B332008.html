@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">我的網站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">服務</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區塊 -->
+    <section class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">歡迎來到3B332008李亭諠的 RWD 網站</h1>
+            <p class="lead text-muted">這是一個使用 Bootstrap 建立的簡單響應式頁面。</p>
+            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                頁面簡介及設計動機
+            </button>
+        </div>
+    </section>
+
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">說明</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>以下是我很喜歡的小狗前三名，分別是黃金獵犬、巴哥犬及吉娃娃。我想要做簡單的介紹，也從找資料中更了解他們。</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 三欄內容區 -->
+    <!--狗狗1號-->
+<section class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">一、黃金獵犬</h5>
+                    <p class="card-text">黃金獵犬友善忠誠，被稱為狗界大暖男，擁有一隻黃金獵犬，其實是相當療癒的，但在台灣的潮濕天氣之下，照顧起來比較需要花一番心力。</p>
+                    <p class="text-muted small"><img src="黃金.jpg" width="150" height="250" alt="狗"></p>
+                    <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#dog1">
+                        領養的話...
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dog1" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">優點與挑戰</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5><b>優點</b></h5>
+                        <ul>
+                            <li>個性溫和：黃金獵犬個性友善，對家庭成員、小孩都非常友好親近。</li>
+                            <li>聰明：由於他們聰明學習力佳且服從度也高，易於訓練，常作為導盲犬。</li>
+                            <li>忠誠度高：牠們一旦認定你是牠的家人，是非常忠誠的，會保護陪伴家人不離不棄。</li>
+                        </ul>
+                        <h5><b>挑戰</b></h5>
+                        <ul>
+                            <li>容易掉毛：由於毛髮多且蓬鬆，掉毛的量很大，需要經常梳毛及清理環境。</li>
+                            <li>運動量較大：黃金獵犬精力充沛，每天需要大量的運動來保持健康，這對於時間有限的飼主來說可能是一個挑戰。</li>
+                            <li>容易生病：黃金獵犬有遺傳性疾病的風險，飼主要特別注意牠們的健康狀況，定期進行健康檢查。</li>
+                        </ul>
+                        <h6>資料來源：<a href="AfmBOors45Eo0oVqSYuZ0HZ5h8_F5gGGYMRnkMQsJkmEiCj9oDieep9J">黃金獵犬</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--狗狗2號-->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">二、巴哥犬</h5>
+                    <p class="card-text">巴哥犬是一種親人、活潑但需要細心照顧的小型犬，適合喜歡與寵物親密互動的家庭或個人。由於牠們容易發胖、短鼻導致呼吸問題，飼主需要特別注意飲食控制、健康管理與運動量。</p>
+                    <p class="text-muted small"><img src="巴哥.jpg" width="250" height="150" alt="狗"></p>
+                    <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#dog2">
+                        領養的話...
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dog2" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">優點與挑戰</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5><b>優點</b></h5>
+                        <ul>
+                            <li>不需大空間，適合城市公寓，是新手友善的室內寵物。</li>
+                        </ul>
+                        <h5><b>挑戰</b></h5>
+                        <ul>
+                            <li>健康照護需細心，日常須清潔皺紋、注意呼吸與眼部狀況。</li>
+                        </ul>
+                        <h6>資料來源：<a href="https://litomon.com/blog/pug-dog/?srsltid=AfmBOooIv2Miq-GseFOx3o6JEh-PRQgeFzWQvghgwMq6y0ASOhqumxyT">巴哥犬</a>、<a href="https://www.dogcatstar.com/blog/pug/?srsltid=AfmBOorz5utvH0mK7TlX5fqEgwLlnSQRHXJIdi3w3X-3gJcyhi2hESCN">巴哥犬2</a></h6>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--狗狗3號-->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">三、吉娃娃</h5>
+                    <p class="card-text">別被吉娃娃嬌小的體型騙了，這種狗狗可是擁有「小狗身、大狗魂」的代表！如果你曾經見過吉娃娃，一定會發現牠們的個性有兩種極端——要嘛超級黏人，無時無刻想窩在你懷裡撒嬌；要嘛氣場驚人，對陌生人毫不客氣，甚至比大狗還要愛吠！</p>
+                    <p class="text-muted small"><img src="吉.jpg" width="300" height="200" alt="狗"></p>
+                    <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#dog3">
+                        領養的話...
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="dog3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">優點與挑戰</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><b>擁有<i>吉</i>迷你體型：</b>吉娃娃（Chihuahua）是目前世界上最小的犬種，身高不到20公分，牠們不僅身形小巧，體積也輕，體重大多不超過3公斤，帶出門一起旅行可說非常方便。</li>
+                        <li><b><i>吉</i>愛吃醋：</b>有些人對牠們的第一印象可能是脾氣不好，很愛吠叫，但這其實是因為牠們比較敏感，任何風吹草動都會立刻警戒，或是受到突然的刺激也容易被驚嚇，加上牠們是好奇寶寶，對周圍的事物容易充滿好奇。</li>
+                        <li><b><i>吉</i>黏人：</b>愛吃醋嫉妒心重的背後，其實也代表著吉娃娃是非常依戀與依賴主人的，牠們對主人的忠誠度可是不輸忠犬小八。</li> 
+                        <li><b><i>吉</i>強聽覺超能力：</b>可以聽到人類聽不到的聲音，例如超聲波、紅外線等。吉娃娃的聽力範圍比人類的聽力範圍要廣得多，這也是為什麼牠們常常一點點風吹草動就反應這麼大的原因。</li>
+                        <li><b><i>吉</i>具個性叫聲：</b>記得給牠們從小開始做社會化訓練，讓牠們熟悉和適應各種環境和人事物，才能降低牠們的恐懼和攻擊性，並且用正面的方式來糾正牠們的叫聲。</li>
+                        <li><b><i>吉</i>長壽：</b>吉娃娃的壽命平均在12~20年。</li>
+                        <li><b><i>吉</i>活潑好動卻也<i>吉</i>愛睡：</b>吉娃娃非常活潑好動，但運動量其實比一般的狗狗小，每天適度帶牠出門散步即可，如果讓牠過度運動，反而會讓牠的骨骼負荷不了。吉娃娃是一種很愛睡覺的狗狗，每天需要睡約12到14個小時，有些甚至可以睡到18個小時。</li>
+                    </ul>
+                    <h6>資料來源：<a href="https://www.sofydog.com/tw/SofyDOG/blog-detail/Chihuahua/?srsltid=AfmBOopJ_JwEPT38P3oi86rtP2RtVekTVJ1TjE2syfAAI8f5NdeEbm2r">吉娃娃</a>、<a href="https://litomon.com/blog/chiwawa/?srsltid=AfmBOop2LEzyYsmbVCvUvc9DSs3uwDPuVVKdCEVW9rCiFgO9jsKZTtzW">吉娃娃2</a></h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+    
